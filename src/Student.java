@@ -35,6 +35,16 @@ public class Student {
                     Student1 st=new Student1(name,rollNo,admissionNo,college);
                     studentList.add(st);
                     break;
+                case 2:
+                    System.out.println("List all student details");
+                    for(int i=0;i<studentList.size();i++){
+                        System.out.println(studentList.get(i).name);
+                        System.out.println(studentList.get(i).rollNo);
+                        System.out.println(studentList.get(i).admissionNo);
+                        System.out.println(studentList.get(i).college);
+                    }
+                    break;
+
 
             }
 
