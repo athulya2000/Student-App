@@ -22,6 +22,21 @@ public class Student {
             System.out.println("Choose your option");
             Scanner s = new Scanner(System.in);
             int menu = s.nextInt();
+            switch (menu){
+                case 1:
+                    System.out.println("Enter the student name");
+                    String name=s.next();
+                    System.out.println("Enter the student roll number");
+                    int rollNo=s.nextInt();
+                    System.out.println("Enter the student admission number");
+                    String admissionNo=s.next();
+                    System.out.println("Enter the college name");
+                    String college=s.next();
+                    Student1 st=new Student1(name,rollNo,admissionNo,college);
+                    studentList.add(st);
+                    break;
+
+            }
 
 
         }
