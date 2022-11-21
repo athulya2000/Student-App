@@ -61,10 +61,26 @@ public class Student {
                         }
                     }
                     break;
+                case 4:
+                    System.out.println("Enter the admission number");
+                    String adNo1=s.next();
+                    for(Student1 st2:studentList){
+                     if(adNo1.equals(st2.admissionNo)){
+                         studentList.remove(st2);
+                     }
+
+                    }
+                    break;
+                case 5:
+                     System.exit(0);
+
+                default:
+                    System.out.println("Choose a valid option");
 
 
 
             }
+
 
 
         }
