@@ -44,6 +44,24 @@ public class Student {
                         System.out.println(studentList.get(i).college);
                     }
                     break;
+                case 3:
+                    System.out.println("Enter the student admission number");
+                    String adNo=s.next();
+                    for(Student1 st1:studentList){
+                        if(adNo.equals(st1.admissionNo)){
+                            System.out.println("Details of student with employee admission number"+adNo+"is");
+                            System.out.println(st1.name);
+                            System.out.println(st1.rollNo);
+                            System.out.println(st1.admissionNo);
+                            System.out.println(st1.college);
+                            break;
+                        }
+                        else{
+                            System.out.println("No such student found");
+                        }
+                    }
+                    break;
+
 
 
             }
